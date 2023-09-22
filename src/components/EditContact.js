@@ -70,7 +70,7 @@ const EditContact = () => {
                                     value={number} onChange={e => setNumber(e.target.value)} />
                             </div>
                             <div className='form-group mb-3'>
-                                <input type='submit' value='Update Contact' className='btn btn-dark' />
+                                <input type='submit' value='Update' className='btn btn-success' />
                                 <Link to='/' className='btn btn-danger ms-3 '>Cancel</Link>
                             </div>
                         </form>

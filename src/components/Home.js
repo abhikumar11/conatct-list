@@ -15,10 +15,10 @@ const Home = () => {
     <div className='container'>
     <div className='row'>
         <div className='col-md-12 my-5 text-end'>
-            <Link to='/add' className='btn btn-outline-dark'>Add Contact</Link>
+            <Link to='/add' className='btn btn-primary'>Add Contact</Link>
         </div>
         <div className='col-md-10 mx-auto'>
-            <table className='table table-hover'>
+            <table className='table table-bordered'>
                 <thead className='text-white bg-dark text-center'>
                     <tr>
                         <th scope='col'>#</th>
@@ -37,7 +37,7 @@ const Home = () => {
                                 <td>{contact.email}</td>
                                 <td>{contact.number}</td>
                                 <td>
-                                    <Link to={`/edit/contact/${contact.id}`} className='btn btn-small btn-primary me-2'>Edit</Link>
+                                    <Link to={`/edit/contact/${contact.id}`} className='btn btn-small btn-info  me-2'>Edit</Link>
                                     <button type='button' onClick={() => deleteContact(contact.id)} className='btn btn-small btn-danger'>Delete</button>
                                 </td>
                             </tr>

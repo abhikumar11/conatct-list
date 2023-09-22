@@ -57,7 +57,7 @@ const AddContact = () => {
                         value={number} onChange={e => setNumber(e.target.value)} />
                 </div>
                 <div className='form-group mb-3'>
-                    <input type='submit' value='Add Contact' className='btn btn-block btn-dark' />
+                    <input type='submit' value='Add Contact' className='btn btn-block btn-success' />
                 </div>
             </form>
         </div>
